@@ -9,17 +9,23 @@ export default function MainNavbar () {
             <div className="logo">
                 <img width={150} src={NintendoLogo} alt='error'></img>
             </div>
-            <div className='SearchBar'>
-                <img src={lupa} alt='error'></img>
-                <input id='search' placeholder='Search games, hardware, news, etc'></input>
-                <label for='search'></label>
-                <button>All categories</button>
+            <div className="logo-responsive">
+                <img width={150} src={NintendoLogo} alt='error'></img>
             </div>
+                <div className='SearchBar'>
+                    <img src={lupa} alt='error'></img>
+                    <input id='search' placeholder='Search games, hardware, news, etc'></input>
+                    <label for='search'></label>
+                    <button>All categories</button>
+                </div>
 
-            <button>Support</button>
-            <button>Wishlist</button>
-            <button>Cart</button>
-            <button>Log in/ Sign up</button>
+                <div className='SearchBar-buttons'>
+                    <button>Support</button>
+                    <button>Wishlist</button>
+                    <button>Cart</button>
+                    <button>Log in/ Sign up</button> 
+                </div>
+
             <button>Flag</button>
         </nav>
     )

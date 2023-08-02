@@ -53,7 +53,7 @@ export default function Footer() {
             </div>
 
             <div className='property'>
-                <div>© Nintendo. Games are property of their respective owners. Nintendo of America Inc. Headquarters are in Redmond, Washington, USA</div>
+                <span>© Nintendo. Games are property of their respective owners. Nintendo of America Inc. Headquarters are in Redmond, Washington, USA</span>
                 <div className='property-buttons'>
                     <button>Butt</button>
                     <button>Butt</button>

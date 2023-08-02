@@ -15,6 +15,11 @@
 .footer-bottom {
     display: flex;
 }
+@media (max-width:1000px) {
+    .footer-bottom {
+        flex-direction: column;
+    }
+}
 
 .footer-bottom-segment{
     border-left: 1px solid black;
