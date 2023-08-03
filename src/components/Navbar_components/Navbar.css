@@ -6,6 +6,11 @@
 .logo-responsive{
     display: none;
 }
+.flag-button{
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
 
 /* search bar */
 
@@ -14,6 +19,9 @@
 }
 
 @media (max-width:1000px) {
+    .MainNavbar{
+        background-color: #e60012;
+    }
     .SearchBar{
         display: none;
     }
@@ -68,6 +76,31 @@
 
 .separator {
     margin: 0 1rem 0 1rem;
+}
+
+.responsive-announce{
+    display: flex
+}
+
+.responsive-announce img {
+    margin-right: 1rem;
+}
+.responsive-announce-hidden{
+    display: flex;
+}
+
+@media(max-width:1000px) {
+    .responsive-announce-hidden{
+        display: none;
+    }
+    .separator{
+        display: none;
+    }
+}
+@media(max-width:440px) {
+    .responsive-announce img {
+        display: none;
+    }
 }
 
 /* Announce 2 */
