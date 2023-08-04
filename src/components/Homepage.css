@@ -13,7 +13,28 @@
 .Card {
     display: flex;
 }
-
 .clasification{
     display: flex
+}
+
+.clasification-mobile {
+    display: flex;
+}
+
+@media(max-width:1000px) {
+    .Main {
+        padding: 1rem;
+    }
+    .Card{
+        flex-direction: column;
+    }
+    .Card-conteiner {
+        margin: 0;
+        padding: 1rem;
+    }
+
+    .clasification{
+
+        display: none;
+    }
 }

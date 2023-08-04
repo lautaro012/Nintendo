@@ -28,7 +28,8 @@ export default function MainNavbar () {
                 </div>
 
             <button className='flag-button'>
-                <img alt='flag' src='https://assets.nintendo.com/image/upload/c_scale,w_24,q_auto/ncom/global/flags-change-region/FlagUsaIconRegionSelect.png'></img></button>
+                <img alt='flag' src='https://assets.nintendo.com/image/upload/c_scale,w_24,q_auto/ncom/global/flags-change-region/FlagUsaIconRegionSelect.png'></img>
+                </button>
         </nav>
     )
 }

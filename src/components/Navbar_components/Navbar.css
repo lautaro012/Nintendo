@@ -111,6 +111,8 @@
     padding:0.5rem
 }
 
+
+
 .download-button {
     display: flex;
     justify-content: space-around;
@@ -127,6 +129,12 @@
     transform: translateX(-50%);
     z-index: 1000;
     width: 100%;
+}
+
+@media (max-width:1000px) {
+    .AbsoluteNavBar-conteiner {
+        display: none;
+    }
 }
 
 .ANB {
