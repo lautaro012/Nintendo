@@ -1,14 +1,17 @@
 import './Homepage.css'
 import stardew from '../assets/images/Stardew.png'
-import calender from '../assets/SVG/calender'
+import calender from '../assets/SVG/calendario.svg'
 import players from '../assets/SVG/players.svg'
-import controller from '../assets/SVG/controller'
+import controller from '../assets/SVG/controller.svg'
 import building from '../assets/SVG/building.svg'
 import config from '../assets/SVG/config.svg'
 import console from '../assets/SVG/switch.svg'
 import memory from '../assets/SVG/memory.svg'
 import world from '../assets/SVG/world.svg'
 import online from '../assets/SVG/online.svg'
+import PC from '../assets/SVG/pc.svg'
+import handheld from '../assets/SVG/handheld.svg'
+import tabletop from '../assets/SVG/tabletop.svg'
 
 export default function HomePage() {
 
@@ -63,19 +66,25 @@ export default function HomePage() {
                         </h4>   
                         <h4>Users Interact</h4>
                     </div>            
-                    <div>
+                    <div className='SPM'>
                         <h2> Supported play modes </h2>
-                        <div>
+                        <div className='playmodes-conteiner'>
                             <div>
-                                <img alt='img'></img>
+                                <div className='playmodes'>
+                                   <img src={PC} alt='img'></img>
+                                </div>
                                 <h2>TV</h2>
                             </div>
                             <div>
-                                <img alt='img'></img>
+                                <div className='playmodes'>
+                                    <img src={tabletop} alt='img'></img>
+                                </div>
                                 <h2>Tabletop</h2>
                             </div>
                             <div>
-                                <img alt='img'></img>
+                                <div className='playmodes'>
+                                    <img src={handheld} alt='img'></img>
+                                </div>
                                 <h2>Handheld</h2>
                             </div>
                         </div>
@@ -116,7 +125,7 @@ export default function HomePage() {
                             <div> Supported play modes </div>
                             <div> TV mode, Tabletop mode, Handheld mode </div>
                        </div><div>
-                            <img src={memory} alt='img'></img>
+                            <img src={memory} alt='img-memory'></img>
                             <div> Game file size </div>
                             <div> 1.5 GB </div>
                        </div><div>

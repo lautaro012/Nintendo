@@ -1,7 +1,7 @@
 import { useState } from "react"
 import Switch from "../../assets/SVG/switch"
 import Speaker from "../../assets/SVG/speaker"
-import Controller from "../../assets/SVG/controller"
+import Controller from "../../assets/SVG/controller.svg"
 import Calender from "../../assets/SVG/calender"
 import Close from "../../assets/SVG/close"
 
@@ -60,7 +60,7 @@ export default function SecondNavbar () {
                   <div>
                     <button>
                       <div>
-                          <Controller></Controller>
+                        <img src={Controller} alt=''></img>
                       </div>
                       <p> Shop Games </p>
                     </button>
