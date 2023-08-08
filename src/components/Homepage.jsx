@@ -11,6 +11,7 @@ import world from '../assets/SVG/world.svg'
 import online from '../assets/SVG/online.svg'
 import PC from '../assets/SVG/pc.svg'
 import handheld from '../assets/SVG/handheld.svg'
+import suma from '../assets/SVG/+.svg'
 import tabletop from '../assets/SVG/tabletop.svg'
 
 export default function HomePage() {
@@ -25,7 +26,7 @@ export default function HomePage() {
                 <div className='Card'>
                     <div>
                         <div>
-                            <img width={'75%'} src={stardew} alt='error'></img>
+                            <img width={'100%'} src={stardew} alt='error'></img>
                         </div>
                         <div className='clasification'>
                             <img src='https://www.esrb.org/wp-content/uploads/2019/05/E10plus.svg' alt='error'></img>
@@ -34,38 +35,54 @@ export default function HomePage() {
                             <h4>Users Interact</h4>
                         </div>
                     </div>
-                    <div>
-                        <h1>| Nintendo Switch</h1>
-                        <h1>Stardew Valley</h1>
-                        <h1>$ 14.99 </h1>
-                        <img width={25} src={coin} alt='coin'></img><h4>Eligible for up to 75 Gold Points</h4>
+                    <div className='Card-price'>
+                        <h4>Nintendo Switch</h4>
+                        <h3>Stardew Valley</h3>
+                        <h3>$ 14.99 </h3>
+                        <div>
+                            <img width={25} src={coin} alt='coin'></img><span>Eligible for up to 75 Gold Points</span>
+                        </div>
                         <button>Direct Download</button>
-                        <h4>This item will be sent to your system automatically after purchase.</h4>
+                        <span>This item will be sent to your system automatically after purchase.</span>
                     </div>
                 </div>
             </div>
             </div>
             <div>
-                    <h1><b>You're moving to the valley...</b></h1>
+                <div className='description-conteiner'>
+                    <h2><b>You're moving to the valley...</b></h2>
             
                     <p>You’ve inherited your grandfather’s old farm plot in Stardew Valley. Armed with hand-me-down tools and a few coins, you set out to begin your new life. Can you learn to live off the land and turn these overgrown fields into a thriving home? It won’t be easy. Ever since Joja Corporation came to town, the old ways of life have all but disappeared. The community center, once the town’s most vibrant hub of activity, now lies in shambles. But the valley seems full of opportunity. With a little dedication, you might just be the one to restore Stardew Valley to greatness!
                     </p>
-                    <br></br>
                     <p>
                     Now with Multiplayer! Invite 1-3 players to join you in the valley! Players can work together to build a thriving farm, share resources, and build relationships with townspeople or each other. As more hands are better than one, players have the option to scale profit margin on produce sold for a more challenging experience
                     </p>
-                    
+
+                    <button className='read-more-button'>
+                        <img src={suma} alt='+'></img> 
+                        <div className='read-more'> Read More </div>
+                    </button>
+
+                    <span> Software description provided by the publisher.</span>
+
                     <button className='explore-button'>
                         Explore this game's official website
                     </button>
                     <img width={'100%'} src={stardew} alt='error'></img>
+                </div>
+                <div>
+                    <h2>ESRB Rating</h2>
                     <div className='clasification-mobile'>
-                        <h2>ESRB Rating</h2>
-                        <img src='https://www.esrb.org/wp-content/uploads/2019/05/E10plus.svg' alt='error'></img>
-                        <h4> Fantasy Violence, Use of Alcohol, Use of Tobacco, Simulated Gambling, Mild Language, Mild Blood
-                        </h4>   
-                        <h4>Users Interact</h4>
+                        <a href='asd'>
+                            <img src='https://www.esrb.org/wp-content/uploads/2019/05/E10plus.svg' alt='error'></img>
+                            <div>
+                                <p> Fantasy Violence, Use of Alcohol, Use of Tobacco, Simulated Gambling, Mild Language, Mild Blood
+                                </p>   
+                                <p>Users Interact</p>
+                            </div>
+                            </a>
                     </div>            
+                </div>
                     <div className='SPM'>
                         <h2> Supported play modes </h2>
                         <div className='playmodes-conteiner'>
@@ -89,56 +106,78 @@ export default function HomePage() {
                             </div>
                         </div>
                     </div>
-                    <div>
-                       <div>
+                    <div >
+                       <div className='characteristics'>
                             <img src={calender} alt='img'></img>
-                            <div> Release date </div>
-                            <div>October 5, 2017</div>
+                            <div>
+                                <h3> Release date </h3>
+                                <div>October 5, 2017</div>
+                            </div>
                        </div>
-                       <div>
+                       <div className='characteristics'>
                             <img src={players} alt='img'></img>
-                            <div> No. of players </div>
                             <div>
-                                <a href='https://robleslautaro.dev'>Single System (1)</a> 
-                                <a href='https://robleslautaro.dev'>Local wireless (1)</a> 
-                                <a href='https://robleslautaro.dev'> Online (1-4) </a> 
+                                <h3> No. of players </h3>
+                                <div>
+                                    <a href='https://robleslautaro.dev'>Single System (1)</a> 
+                                    <a href='https://robleslautaro.dev'>Local wireless (1)</a> 
+                                    <a href='https://robleslautaro.dev'> Online (1-4) </a> 
+                                </div>
                             </div>
                        </div>
-                       <div>
+                       <div className='characteristics'>
                             <img src={controller} alt='img'></img>
-                            <div>Genre</div>
                             <div>
-                                <a href='https://robleslautaro.dev'>Role-Playing</a>
-                                <a href='https://robleslautaro.dev'>Simulation</a>
+                                <h3>Genre</h3>
+                                <div>
+                                    <a href='https://robleslautaro.dev'>Role-Playing</a>
+                                    <a href='https://robleslautaro.dev'>Simulation</a>
+                                </div>
                             </div>
                        </div>
-                       <div>
+                       <div className='characteristics'>
                             <img src={building} alt='img'></img>
-                            <div>Publisher</div>
-                            <div> <a href='https://robleslautaro.dev'> ConcernedApe </a></div>
-                       </div><div>
+                            <div>
+                                <h3>Publisher</h3>
+                                <div> <a href='https://robleslautaro.dev'> ConcernedApe </a></div>
+                            </div>
+                       </div>
+                       <div className='characteristics'>
                             <img src={config} alt='img'></img>
-                            <div> ESRB rating </div>
-                            <div> <a href='https://robleslautaro.dev'>Everyone 10+</a> </div>
-                       </div><div>
+                            <div>
+                                <h3> ESRB rating </h3>
+                                <div> <a href='https://robleslautaro.dev'>Everyone 10+</a> </div>
+                            </div>
+                       </div>
+                       <div className='characteristics'>
                             <img src={console} alt='img'></img>
-                            <div> Supported play modes </div>
-                            <div> TV mode, Tabletop mode, Handheld mode </div>
-                       </div><div>
+                            <div>
+                                <h3> Supported play modes </h3>
+                                <div> TV mode, Tabletop mode, Handheld mode </div>
+                            </div>
+                       </div>
+                       <div className='characteristics'>
                             <img src={memory} alt='img-memory'></img>
-                            <div> Game file size </div>
-                            <div> 1.5 GB </div>
-                       </div><div>
+                            <div>
+                                <h3> Game file size </h3>
+                                <div> 1.5 GB </div>
+                            </div>
+                       </div>
+                       <div className='characteristics'>
                             <img src={world} alt='img'></img>
-                            <div> Supported languages </div>
-                            <div> English, French, German, Italian, Japanese, Korean, Portuguese, Russian, Simplified Chinese, Spanish, Traditional Chinese </div>
+                            <div>
+                                <div> English, French, German, Italian, Japanese, Korean, Portuguese, Russian, Simplified Chinese, Spanish, Traditional Chinese </div>
+                                <div> Supported languages </div>
+                            </div>
                        </div>
                     </div>
-                    <div>
-                        <img src={online} alt='online-err'></img>
-                        <p> Play online, access classic NES™ and Super NES™ games, and more with a Nintendo Switch Online membership. </p>
-                        <p>This game supports: {<a href='https://robleslautaro.dev'>Online Play</a>}  {<a href='https://robleslautaro.dev'>Save Data Cloud</a>}</p>
-                        <button> Learn More </button>
+                    <div className='online'>
+                        <img src={online} width={'200px'} alt='online-err'></img>
+                        <div>
+                            <p><b>Play online, access classic NES™ and Super NES™ games, and more with a Nintendo Switch Online membership. </b></p>
+                            <p>This game supports: {<a href='https://robleslautaro.dev'>Online Play</a>}  {<a href='https://robleslautaro.dev'>Save Data Cloud</a>}</p>
+                            <button className='learn-more'> Learn More </button>
+                        </div>    
                     </div>
                     <div>
                         <h2><b> More Like This </b></h2>

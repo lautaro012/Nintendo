@@ -2,6 +2,18 @@
     background-color: #d6f0fa;
 }
 
+.Homepage button {
+    background-color: #e60012;
+    color: white;
+    border-style: solid;
+    border-color: #e60012;
+    border-radius: 0.25rem;
+    width: 100%;
+    height: 3.5rem;
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
 .Card-conteiner {
     background-color: white;
     display: flex;
@@ -12,15 +24,135 @@
 
 .Card {
     display: flex;
+    
 }
+
+.Card-price {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.Card-price h3{
+    margin: 0;
+    font-weight: 700;
+    margin-block: 0px;
+    line-height: 1.35;
+    font-size: 1.3125rem;
+}
+
+.Card-price span{
+    font-size: 0.65rem;
+    font-weight: 300;
+}
+
+.Card-price div {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.Card-price h4 {
+    border-left: 0.25rem solid #e60012;
+    padding-left: 0.25rem;
+    font-weight: 300;
+    font-size: 0.75rem;
+}
+
 .clasification{
     display: flex
 }
 
 .clasification-mobile {
+    align-items: center;
     display: flex;
+    min-height: 4.25rem;
+    gap: 0.75rem;
+    display: flex;;
 }
 
+.clasification-mobile a {
+    padding: 1rem 2rem;
+    background: rgb(255, 255, 255);
+    box-shadow: rgba(60, 64, 89, 0.15) 0px 4px 16px 0px;
+    text-align: left;
+    margin-bottom: 2rem;
+    text-decoration: none;
+    display: inline-flex;
+    display: flex;
+    align-items: flex-start;
+}
+.clasification-mobile div {
+    display: flex;
+    flex: 1 1 0%;
+    min-width: 120px;
+    font-weight: 300;
+    font-size: 0.625rem;
+    line-height: 0.875rem;
+    padding: 0px;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: fit-content;
+    color: rgb(72, 72, 72);
+    max-width: 352px;
+}
+
+.explore-button {
+    background-color: #e60012;
+    color: white;
+    border-style: solid;
+    border-color: #e60012;
+    border-radius: 0.25rem;
+    width: 100%;
+    height: 3.5rem;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+/* Description */
+
+.description-conteiner {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.description-conteiner h2 {
+    font-weight: 700;
+    margin-block: 0px;
+    font-size: 1.125rem;
+}
+
+.description-conteiner p {
+    font-weight: 300;
+    font-size: 0.875rem;
+}
+.description-conteiner span {
+    margin: 0px;
+    font-weight: 300;
+    font-size: 0.625rem;
+}
+
+.read-more-button {
+    gap: 0.5rem;
+    display: flex;
+    border: none;
+    color: #e60012;
+    cursor: pointer;
+    align-items: center;
+}
+
+.read-more {
+    font-weight: 700;
+    cursor: pointer;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    margin: 0px;
+    font-size: 1.25rem !important ;
+}
 /* Supported Play Modes*/
 
 .SPM {
@@ -54,6 +186,50 @@
     border-radius: 4px;
 }
 
+/* caracteristicas */
+
+.characteristics {
+    display: flex;
+    gap: 2rem;
+    justify-content: flex-start;
+    padding: 1rem 0.5rem;
+    align-items: center;
+}
+.characteristics div {
+    display: flex;
+    flex-direction: column;
+}
+
+.characteristics h3 {
+    margin: 0;
+}
+
+/* Online section */
+.online {
+    display: flex;
+    padding: 5rem 2.5rem;
+    flex-direction: column;
+}
+
+.online div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.online p {
+    font-size: 1.25rem;
+}
+.learn-more{
+    width: auto;
+    height: 3rem;
+    background: red;
+    color: white;
+    font-size: 1rem;
+    border-color: red;
+    font-weight: 700;
+    border-radius: 0.25rem;
+    padding: 0 1.5rem;
+}
 @media(max-width:1000px) {
     .Main {
         padding: 1rem;
