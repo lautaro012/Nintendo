@@ -13,6 +13,7 @@ import PC from '../assets/SVG/pc.svg'
 import handheld from '../assets/SVG/handheld.svg'
 import suma from '../assets/SVG/+.svg'
 import tabletop from '../assets/SVG/tabletop.svg'
+import download from '../assets/SVG/download.svg'
 
 export default function HomePage() {
 
@@ -22,7 +23,7 @@ export default function HomePage() {
         <div className='Main'>
             <div className="Homepage"> 
             <div className='Card-conteiner'>
-                <div>{'Store > Games > Stardew Valley'}</div>
+                <div className='nav-card'>{'Store > Games > Stardew Valley'}</div>
                 <div className='Card'>
                     <div>
                         <div>
@@ -42,7 +43,10 @@ export default function HomePage() {
                         <div>
                             <img width={25} src={coin} alt='coin'></img><span>Eligible for up to 75 Gold Points</span>
                         </div>
-                        <button>Direct Download</button>
+                        <button>
+                            <img src={download} alt='download-img'></img>
+                            Direct Download
+                        </button>
                         <span>This item will be sent to your system automatically after purchase.</span>
                     </div>
                 </div>

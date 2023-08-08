@@ -13,7 +13,7 @@ export default function Announce1 () {
            <div className="separator"> | </div>
            <div className="responsive-announce">
             <img src={coin} alt='error'></img>
-            {<p> Earn <b> My Nintendo Points </b> on digital games </p>}
+            {<p> Earn <b><u> My Nintendo Points </u></b> on digital games </p>}
            </div>
         </nav>
     )
