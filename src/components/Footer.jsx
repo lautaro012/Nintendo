@@ -21,65 +21,116 @@ export default function Footer() {
                 </div>
             </div>
             <div className='footer-bottom'>
-                <div className='footer-bottom-segment'>
-                    <h2> About Nintendo </h2>
-                    <h3> Careers </h3>
-                    <h3> Corporate Social Responsibility </h3>
-                </div>
-                              
-                <div className='footer-bottom-segment'>
-                    <h2> Shop </h2>
-                    <h3> Games </h3>
-                    <h3> Hardware </h3>
-                    <h3> Merchandise </h3>
-                    <h3> Sales & deals </h3>
-                    <h3> Exclusives </h3>
-                    <h3> Online service </h3>
-                    <h3> Nintendo NY store </h3>
-                </div>
-                              
-                <div className='footer-bottom-segment'>
-                    <h2> My Nintendo Store orders </h2>
-                    <h3> Order details </h3>
-                    <h3> Shipping info </h3>
-                    <h3> Returns & exchanges </h3>
-                    <h3> FAQ </h3>
-                </div>
-               
-                <div className='footer-bottom-segment'>
-                    <h2> title </h2>
-                    <h3> example 1 </h3>
-                    <h3> example 2 </h3>
-                </div>
+                <div className='footer-bottom-grid'>
+                    <div className='footer-bottom-segment'>
+                        <h2> About Nintendo </h2>
+                        <ul>
+                            <li>
+                                <a href='https://robleslautaro.dev'><span>Careers</span></a>        
+                            </li>
+                            <li>
+                                <a href='https://robleslautaro.dev'><span> Corporate Social Responsibility </span></a>
+                            </li>
+                        </ul>
+                    </div>
+                                
+                    <div className='footer-bottom-segment'>
+                        <h2> Shop </h2>
+                        <ul>
+                            <li>
+                                <a href='https://robleslautaro.dev'><span> Games </span></a>
+                            </li>
+                            <li>
+                                <a href='https://robleslautaro.dev'><span> Hardware </span></a>
+                            </li>
+                            <li>
+                                <a href='https://robleslautaro.dev'><span>Merchandise</span></a>
+                            </li>
+                            <li>
+                                <a href='https://robleslautaro.dev'><span> Sales & deals </span></a>
+                            </li>
+                            <li>
+                                <a href='https://robleslautaro.dev'><span> Exclusives </span></a>
+                            </li>
+                            <li>
+                                <a href='https://robleslautaro.dev'><span> Online service </span></a>
+                            </li>
+                            <li>
+                                <a href='https://robleslautaro.dev'><span> Nintendo NY store </span></a>
+                            </li>
+                        </ul>
+                    </div>
+                                
+                    <div className='footer-bottom-segment'>
+                        <h2> My Nintendo Store orders </h2>
+                        <ul>
+                            <li>
+                                <a href='https://robleslautaro.dev'><span> Order details </span></a>
+                            </li>
+                            <li>
+                                <a href='https://robleslautaro.dev'><span> Shipping info </span></a>
+                            </li>
+                            <li>
+                                <a href='https://robleslautaro.dev'><span>  Returns & exchanges </span></a>
+                            </li>
+                            <li>
+                                <a href='https://robleslautaro.dev'><span> FAQ </span></a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div className='footer-bottom-segment'>
+                        <h2> Support </h2>
+                        <ul>
+                            <li>
+                                <a href='https://robleslautaro.dev'><span> Nintendo Switch </span></a>
+                            </li>                            <li>
+                                <a href='https://robleslautaro.dev'><span> Nintendo Account </span></a>
+                            </li>                            <li>
+                                <a href='https://robleslautaro.dev'><span> Other systems </span></a>
+                            </li>                            <li>
+                                <a href='https://robleslautaro.dev'><span> Repairs </span></a>
+                            </li>                            <li>
+                                <a href='https://robleslautaro.dev'><span> Nintendo product recycling </span></a>
+                            </li>
+                        </ul>
+                    </div>
                 
-                <div className='footer-bottom-segment'>
-                    <h2> Support </h2>
-                    <h3> Nintendo Switch </h3>
-                    <h3> Nintendo Account </h3>
-                    <h3> Other systems </h3>
-                    <h3> Repairs </h3>
-                    <h3> Nintendo product recycling </h3>
-                </div>
-               
-                <div className='footer-bottom-segment'>
-                    <h2> Parents </h2>
-                    <h3> Info for parents </h3>
-                    <h3> Parental control </h3>
+                    <div className='footer-bottom-segment'>
+                        <h2> Parents </h2>
+                        <ul>
+                            <li>
+                                <a href='https://robleslautaro.dev'><span> Info for parents </span></a>
+                            </li>                            <li>
+                                <a href='https://robleslautaro.dev'><span> Parental control </span></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div className='footer-bottom-segment'>
+                        <h2> Community </h2>
+                        <ul>
+                            <li>
+                                <a href='https://robleslautaro.dev'><span> Community guidelines </span></a>
+                            </li>                            <li>
+                                <a href='https://robleslautaro.dev'><span> Online safety principles </span></a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div className='footer-bottom-segment'>
+                        <h2> Privacy </h2>
+                        <ul>
+                            <li>
+                                <a href='https://robleslautaro.dev'><span>  Privacy Policy </span></a>
+                            </li>                            <li>
+                                <a href='https://robleslautaro.dev'><span> Cookies and interest-based ads </span></a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
 
-                <div className='footer-bottom-segment'>
-                    <h2> Community </h2>
-                    <h3> Community guidelines </h3>
-                    <h3> Online safety principles </h3>
-                </div>
-                
-                <div className='footer-bottom-segment'>
-                    <h2> Privacy </h2>
-                    <h3> Privacy Policy </h3>
-                    <h3> Cookies and interest-based ads </h3> 
-                </div>
-
-                {<svg>{ESRB}</svg>}
+                {<img width={'64px'} className='ESRB-image' src={ESRB} alt='ESRB'></img>}
             </div>
 
             <div className='property'>

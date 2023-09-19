@@ -164,6 +164,7 @@
     border: none;
     flex: 1 1 auto;
     justify-content: center;
+    background: transparent;
 }
 
 .ABN-button-search {

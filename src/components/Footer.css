@@ -15,6 +15,14 @@
 .footer-bottom {
     display: flex;
 }
+.footer-bottom-grid {
+    display: grid;
+    grid-template-columns: 15.625rem;
+    margin: 1rem auto;
+    row-gap: 2rem;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
 @media (max-width:1000px) {
 
     .footer-nintendo-logo {
@@ -25,6 +33,7 @@
         padding: 1rem;
         display: flex;
         flex-direction: column;
+        gap:1rem
     }
 
     .footer-top div {
@@ -35,22 +44,56 @@
 
     .footer-bottom {
         flex-direction: column;
+        background-color: rgb(255, 255, 255);
+        padding: 2rem 1rem;
+        }
+    .ESRB-image{
+        width: 64px;
+        align-self: center;
     }
 }
 
 .footer-bottom-segment{
     border-left: 1px solid black;
-    padding: 0rem 6rem 0px 1rem;
+    padding-left: 1.5rem;
+}
+.footer-bottom-segment h2{    
+    color: rgb(72, 72, 72);
+    font-size: 1rem;
+    border-bottom-color: transparent;
+}
+.footer-bottom-segment ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+.footer-bottom-segment ul>li>a {
+    background: transparent;
+    margin: 0px;
+    border: 0px;
+    line-height: 1.4;
+    border-radius: var(--border-radius);
+    display: inline-block;
+    color: rgb(230, 0, 18);
+    box-shadow: rgba(172, 0, 13, 0) 0px 0px 0px 4px;
+    transition: box-shadow 200ms ease-in-out 25ms;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
 }
 
-.footer-bottom-segment h3 {
-    color: #e60012;
-    font-size:medium;
-}
-
-.footer-bottom-segment h3:hover {
-    border-bottom: 1px solid #e60012;
+.footer-bottom-segment ul>li>a>span {
+    font-size: 0.875rem;
+    font-weight: 700;
     cursor: pointer;
+    padding-bottom: 0px;
+    position: relative;
+    border-bottom: 2px solid rgb(230, 0, 18);
+    margin: 0px;
+    border-bottom-color: transparent;
+    transition: border-bottom-color 200ms ease-in-out 25ms, color 200ms ease-in-out 25ms;
+}
+.footer-bottom-segment ul>li>a>span:hover{
+    border-bottom: 2px solid rgb(230, 0, 18);
 }
 
 .property {
@@ -61,6 +104,15 @@
     text-align: center;
     gap: 2rem;
 }
+
+.property span {
+    text-align: center;
+    max-width: 60em;
+    margin: 0px;
+    font-weight: 300;
+    font-size: 0.625rem;
+}
+
 .property-buttons {
     display: inline-flex;
     justify-content: center;
@@ -69,4 +121,7 @@
 
 .property-buttons a {
     color: white;
+    border-bottom-color: transparent;
+    font-size: 0.625rem;
+    text-decoration: none;
 }

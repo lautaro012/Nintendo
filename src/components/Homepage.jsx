@@ -14,10 +14,17 @@ import handheld from '../assets/SVG/handheld.svg'
 import suma from '../assets/SVG/+.svg'
 import tabletop from '../assets/SVG/tabletop.svg'
 import download from '../assets/SVG/download.svg'
+import resta from '../assets/SVG/resta.svg'
+import { useState } from 'react'
 
 export default function HomePage() {
 
     let coin = 'https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_1.0/c_scale,w_100/Design%20System/Component%20Library/Icon/my-nintendo-gold-coin.png'
+    
+    const [Read,setRead] = useState(false)
+    const ReadMore = () => {
+        setRead(!Read)
+    }
 
     return (
         <div className='Main'>
@@ -58,13 +65,19 @@ export default function HomePage() {
             
                     <p>You’ve inherited your grandfather’s old farm plot in Stardew Valley. Armed with hand-me-down tools and a few coins, you set out to begin your new life. Can you learn to live off the land and turn these overgrown fields into a thriving home? It won’t be easy. Ever since Joja Corporation came to town, the old ways of life have all but disappeared. The community center, once the town’s most vibrant hub of activity, now lies in shambles. But the valley seems full of opportunity. With a little dedication, you might just be the one to restore Stardew Valley to greatness!
                     </p>
-                    <p>
+                    <p className={Read ? 'invisible' : 'visible'}>
                     Now with Multiplayer! Invite 1-3 players to join you in the valley! Players can work together to build a thriving farm, share resources, and build relationships with townspeople or each other. As more hands are better than one, players have the option to scale profit margin on produce sold for a more challenging experience
                     </p>
 
-                    <button className='read-more-button'>
-                        <img src={suma} alt='+'></img> 
-                        <div className='read-more'> Read More </div>
+                    <button className='read-more-button' onClick={ReadMore}>
+                        <div className={Read ? 'visible' : 'invisible'}>
+                            <img src={suma} alt='+'></img> 
+                            <div className='read-more'> Read More </div>
+                        </div>
+                        <div className={Read ? 'invisible' : 'visible'}>
+                            <img src={resta} alt='-'></img> 
+                            <div className='read-more'> Read Less </div>
+                        </div>
                     </button>
 
                     <span> Software description provided by the publisher.</span>
@@ -74,18 +87,20 @@ export default function HomePage() {
                     </button>
                     <img width={'100%'} src={stardew} alt='error'></img>
                 </div>
-                <div>
+                <div className='clasification-mobile'>
                     <h2>ESRB Rating</h2>
-                    <div className='clasification-mobile'>
-                        <a href='asd'>
-                            <img src='https://www.esrb.org/wp-content/uploads/2019/05/E10plus.svg' alt='error'></img>
+                    <a href='asd'>
+                        <div className='ESRB-style'>
                             <div>
-                                <p> Fantasy Violence, Use of Alcohol, Use of Tobacco, Simulated Gambling, Mild Language, Mild Blood
-                                </p>   
-                                <p>Users Interact</p>
+                                <img src='https://www.esrb.org/wp-content/uploads/2019/05/E10plus.svg' alt='error'></img>
                             </div>
-                            </a>
-                    </div>            
+                            <div className='ESRB-p'>
+                                <div className='first-child'> Fantasy Violence, Use of Alcohol, Use of Tobacco, Simulated Gambling, Mild Language, Mild Blood
+                                </div>   
+                                <div className='last-child'>Users Interact</div>
+                            </div>
+                        </div>
+                    </a>          
                 </div>
                     <div className='SPM'>
                         <h2> Supported play modes </h2>
@@ -113,7 +128,7 @@ export default function HomePage() {
                     <div >
                        <div className='characteristics'>
                             <img src={calender} alt='img'></img>
-                            <div>
+                            <div >
                                 <h3> Release date </h3>
                                 <div>October 5, 2017</div>
                             </div>
@@ -122,10 +137,22 @@ export default function HomePage() {
                             <img src={players} alt='img'></img>
                             <div>
                                 <h3> No. of players </h3>
-                                <div>
-                                    <a href='https://robleslautaro.dev'>Single System (1)</a> 
-                                    <a href='https://robleslautaro.dev'>Local wireless (1)</a> 
-                                    <a href='https://robleslautaro.dev'> Online (1-4) </a> 
+                                <div className='chars-links'>
+                                    <a href='https://robleslautaro.dev'>
+                                        <span>
+                                            Single System (1)
+                                        </span>
+                                        </a> 
+                                    <a href='https://robleslautaro.dev'>
+                                        <span>
+                                            Local wireless (1)
+                                        </span>
+                                        </a> 
+                                    <a href='https://robleslautaro.dev'> 
+                                        <span>
+                                            Online (1-4)
+                                        </span>
+                                     </a> 
                                 </div>
                             </div>
                        </div>
@@ -133,9 +160,17 @@ export default function HomePage() {
                             <img src={controller} alt='img'></img>
                             <div>
                                 <h3>Genre</h3>
-                                <div>
-                                    <a href='https://robleslautaro.dev'>Role-Playing</a>
-                                    <a href='https://robleslautaro.dev'>Simulation</a>
+                                <div className='chars-links'>
+                                    <a href='https://robleslautaro.dev'>
+                                    <span>
+                                        Role-Playing
+                                    </span>
+                                    </a>
+                                    <a href='https://robleslautaro.dev'>
+                                        <span>
+                                            Simulation
+                                        </span>
+                                        </a>
                                 </div>
                             </div>
                        </div>
@@ -143,14 +178,14 @@ export default function HomePage() {
                             <img src={building} alt='img'></img>
                             <div>
                                 <h3>Publisher</h3>
-                                <div> <a href='https://robleslautaro.dev'> ConcernedApe </a></div>
+                                <div className='chars-links'> <a href='https://robleslautaro.dev'> <span>ConcernedApe</span> </a></div>
                             </div>
                        </div>
                        <div className='characteristics'>
                             <img src={config} alt='img'></img>
                             <div>
                                 <h3> ESRB rating </h3>
-                                <div> <a href='https://robleslautaro.dev'>Everyone 10+</a> </div>
+                                <div className='chars-links'> <a href='https://robleslautaro.dev'> <span>Everyone 10+</span> </a> </div>
                             </div>
                        </div>
                        <div className='characteristics'>
