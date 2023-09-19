@@ -213,23 +213,25 @@ export default function HomePage() {
                     <div className='online'>
                         <img src={online} width={'200px'} alt='online-err'></img>
                         <div>
-                            <p><b>Play online, access classic NES™ and Super NES™ games, and more with a Nintendo Switch Online membership. </b></p>
-                            <p>This game supports: {<a href='https://robleslautaro.dev'>Online Play</a>}  {<a href='https://robleslautaro.dev'>Save Data Cloud</a>}</p>
+                            <p className='online-text'><b>Play online, access classic NES™ and Super NES™ games, and more with a Nintendo Switch Online membership. </b></p>
+                            <p>This game supports: {<a href='https://robleslautaro.dev'><span>Online Play</span></a>}  {<a href='https://robleslautaro.dev'><span>Save Data Cloud</span></a>}</p>
                             <button className='learn-more'> Learn More </button>
                         </div>    
                     </div>
-                    <div>
-                        <h2><b> More Like This </b></h2>
-                        <img width={'100%'} alt='err' src={stardew}></img>
-                    </div>
-                    <div>
-                        <p> 
-                            WARNING: If you have epilepsy or have had seizures or other unusual reactions to flashing lights or patterns, consult a doctor before playing video games. All users should read the Health and Safety Information available in the system settings before using this software.
-                            
-                            Nintendo Switch Online membership (sold separately) and Nintendo Account required for online play. Not available in all countries. Internet access required for online features. Terms apply. nintendo.com/switch-online
+                    <div className='MoreLikethis'>
+                        <div>
+                            <h2 className='More'><b> More Like This </b></h2>
+                            <img width={'100%'} alt='err' src={stardew}></img>
+                        </div>
+                        <div>
+                            <p> 
+                                WARNING: If you have epilepsy or have had seizures or other unusual reactions to flashing lights or patterns, consult a doctor before playing video games. All users should read the Health and Safety Information available in the system settings before using this software.
+                                
+                                Nintendo Switch Online membership (sold separately) and Nintendo Account required for online play. Not available in all countries. Internet access required for online features. Terms apply. nintendo.com/switch-online
 
-                            Stardew Valley © ConcernedApe LLC 2016-2020. All rights reserved.
-                       </p>
+                                Stardew Valley © ConcernedApe LLC 2016-2020. All rights reserved.
+                        </p>
+                        </div>
                     </div>
             </div>
         </div>

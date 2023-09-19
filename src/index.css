@@ -8,6 +8,35 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+h2 {
+  font-weight: 700;
+  margin-block: 0px;
+  font-size: 0.875rem;
+}
+
+a{
+  background: transparent;
+  margin: 0px;
+  border: 0px;
+  line-height: 1.4;
+  border-radius: var(--border-radius);
+  display: inline-block;
+  color: rgb(230, 0, 18);
+  box-shadow: rgba(172, 0, 13, 0) 0px 0px 0px 4px;
+  transition: box-shadow 200ms ease-in-out 25ms;
+  text-decoration: none;
+}
+
+a>span{
+  font-size: 0.875rem;
+  font-weight: 700;
+  cursor: pointer;
+  padding-bottom: 0px;
+  position: relative;
+  border-bottom: 2px solid rgb(230, 0, 18);
+  margin: 0px;
+  transition: border-bottom-color 200ms ease-in-out 25ms, color 200ms ease-in-out 25ms;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
