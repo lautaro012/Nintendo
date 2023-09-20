@@ -14,6 +14,7 @@ import handheld from '../assets/SVG/handheld.svg'
 import suma from '../assets/SVG/+.svg'
 import tabletop from '../assets/SVG/tabletop.svg'
 import download from '../assets/SVG/download.svg'
+import test from '../assets/SVG/test.svg'
 import resta from '../assets/SVG/resta.svg'
 import { useState } from 'react'
 
@@ -46,7 +47,14 @@ export default function HomePage() {
                     <div className='Card-price'>
                         <h4>Nintendo Switch</h4>
                         <h3>Stardew Valley</h3>
-                        <h3>$ 14.99 </h3>
+                        <div>
+                            <div>
+                                <h3>$ 14.99 </h3>
+                            </div>
+                            <div>
+                                <button> {'<3'} </button>
+                            </div>
+                        </div>
                         <div>
                             <img width={25} src={coin} alt='coin'></img><span>Eligible for up to 75 Gold Points</span>
                         </div>

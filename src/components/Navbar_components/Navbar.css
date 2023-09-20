@@ -81,6 +81,9 @@
 .responsive-announce{
     display: flex
 }
+.responsive-announce p {
+    font-size: 0.75rem;
+}
 
 .responsive-announce img {
     margin-right: 1rem;
