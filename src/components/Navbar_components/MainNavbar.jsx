@@ -7,29 +7,44 @@ export default function MainNavbar () {
 
     return (
         <nav className="MainNavbar">
-            <div className="logo">
-                <img width={150} src={NintendoLogo} alt='error'></img>
-            </div>
-            <div className="logo-responsive">
-                <img width={150} src={NintendoStoreLogo} alt='error'></img>
-            </div>
-                <div className='SearchBar'>
-                    <img src={lupa} alt='error'></img>
-                    <input id='search' placeholder='Search games, hardware, news, etc'></input>
-                    <label for='search'></label>
-                    <button>All categories</button>
+            <div className='MainNavbar-firstDiv'>
+                <div>
+                    <div className="logo">
+                        <img width={150} src={NintendoLogo} alt='error'></img>
+                    </div>
+  
+                </div>
+                <div>
+                    <form className='SearchBar'>
+                        <span>
+                            <div className='search-button'>
+                                <img src={lupa} alt='error'></img>
+                                <input id='search' placeholder='Search'></input>
+                                <label for='search'></label>
+                            </div>
+                        </span>
+                        <div>
+                            <div>All categories</div>
+                        </div>
+                    </form>
                 </div>
 
+            </div>
+            <div className='MainNavbar-secondDiv'>
                 <div className='SearchBar-buttons'>
-                    <button>Support</button>
-                    <button>Wishlist</button>
-                    <button>Cart</button>
-                    <button>Log in/ Sign up</button> 
+                    <div>Support</div>
+                    <div>Wishlist</div>
+                    <div>Cart</div>
+                    <div>Log in/ Sign up</div> 
                 </div>
 
-            <button className='flag-button'>
-                <img alt='flag' src='https://assets.nintendo.com/image/upload/c_scale,w_24,q_auto/ncom/global/flags-change-region/FlagUsaIconRegionSelect.png'></img>
-                </button>
+                <div className="logo-responsive">
+                        <img width={150} src={NintendoStoreLogo} alt='error'></img>
+                    </div>
+                <div className='flag-button'>
+                    <img alt='flag' src='https://assets.nintendo.com/image/upload/c_scale,w_24,q_auto/ncom/global/flags-change-region/FlagUsaIconRegionSelect.png'></img>
+                </div>
+            </div>
         </nav>
     )
 }

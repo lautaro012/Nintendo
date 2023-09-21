@@ -37,6 +37,68 @@ a>span{
   margin: 0px;
   transition: border-bottom-color 200ms ease-in-out 25ms, color 200ms ease-in-out 25ms;
 }
+
+button {
+  background-color: #e60012;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border-style: solid;
+  border-color: #e60012;
+  border-radius: 0.5rem;
+  font-weight: 700;
+  height: 3.5rem;
+  width: calc(100% - 2px);
+  font-size: 1.25rem;
+  cursor: pointer;
+  transform: none;
+}
+
+button:hover {
+  animation: pulse 0.5s ease;
+  transform: scaleX(1.0605) scaleY(1.0605) translateZ(0px);  
+  background-color:rgb(172, 0, 13);
+  border-color:rgb(172, 0, 13);
+}
+
+button>span {
+  order: initial;
+  z-index: 1;
+  pointer-events: none;
+  height: 100%;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  font-weight: 700 !important;
+  font-size: 1.125rem !important
+}
+
+
+@keyframes pulse {
+  0% {
+  }
+  25% {
+     transform: scaleX(1.08) scaleY(1.08) translateZ(0px);
+   
+     border-color:rgb(172, 0, 13);
+  }
+  50%{
+      transform: scaleX(1.04) scaleY(1.04) translateZ(0px);
+      
+  }
+  75% {
+      transform: scaleX(1.0705) scaleY(1.0705) translateZ(0px);
+      background-color:rgb(172, 0, 13);
+    
+  }
+  100% {
+      transform: scaleX(1.0505) scaleY(1.0505) translateZ(0px);
+  }
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

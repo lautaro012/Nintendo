@@ -3,6 +3,21 @@
     justify-content: space-around;
     align-items: center;
 }
+
+.MainNavbar-secondDiv {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    gap: 1rem;
+}
+.MainNavbar-firstDiv {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    gap: 1rem;
+    flex: 1 1 0%;
+}
+
 .logo-responsive{
     display: none;
 }
@@ -16,6 +31,20 @@
 
 .SearchBar {
     display: flex;
+}
+.search-button {
+    cursor:pointer
+}
+.search-button:hover{
+    color: #e60012;
+}
+
+.SearchBar-buttons{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    gap: 1.75rem;
+    padding: 0px 1.25rem;
 }
 
 @media (max-width:1000px) {

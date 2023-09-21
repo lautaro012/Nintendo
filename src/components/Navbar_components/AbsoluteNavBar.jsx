@@ -10,9 +10,9 @@ export default function AbsoluteNavBar () {
         <div className="AbsoluteNavBar-conteiner">
             <div className="ANB">
                 <nav className="AbsoluteNavBar">
-                    <button className="ABN-button">
+                    <div className="ABN-button">
                         <Dropdown></Dropdown>
-                    </button>
+                    </div>
                     
                     <a href='https://www.robleslautaro.dev' className="ABN-button">
                         <Hearth></Hearth>

@@ -15,55 +15,55 @@ export default function SecondNavbar () {
     return (
         <nav className="SecondNavbar">
           <div>
-            <button>My Nintendo Store</button>
-            <button onClick={ShowDetails}>Games</button>
-            <button>Nintendo Switch</button>
-            <button>News & Events</button>
-            <button>Play Nintendo</button>
+            <div>My Nintendo Store</div>
+            <div onClick={ShowDetails}>Games</div>
+            <div>Nintendo Switch</div>
+            <div>News & Events</div>
+            <div>Play Nintendo</div>
           </div>
           
           <div className={Show ? 'Games-active' : 'Games-hidden'}>
             <div>
               <div>
-                <button>
+                <div>
                   <Close></Close>
-                </button>
+                </div>
               </div>
               <div className="Dropdown-buttons">
                   <div>
-                    <button>
+                    <div>
                       <div>
                         <Switch></Switch>
                       </div>
                       <p> Nintendo Switch Games </p>
-                    </button>
+                    </div>
                   </div>
 
                   <div>
-                    <button>
+                    <div>
                       <div>
                         <Speaker></Speaker>
                       </div>
                       <p> New Releases </p>
-                    </button>
+                    </div>
                   </div>
 
                   <div>
-                    <button>
+                    <div>
                       <div>
                         <Calender></Calender>
                       </div>
                       <p> Coming Soon </p>
-                    </button>
+                    </div>
                   </div>
 
                   <div>
-                    <button>
+                    <div>
                       <div>
                         <img src={Controller} alt=''></img>
                       </div>
                       <p> Shop Games </p>
-                    </button>
+                    </div>
                   </div>
                 </div>
               </div>

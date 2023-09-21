@@ -14,7 +14,6 @@ import handheld from '../assets/SVG/handheld.svg'
 import suma from '../assets/SVG/+.svg'
 import tabletop from '../assets/SVG/tabletop.svg'
 import download from '../assets/SVG/download.svg'
-import test from '../assets/SVG/test.svg'
 import resta from '../assets/SVG/resta.svg'
 import { useState } from 'react'
 
@@ -59,8 +58,10 @@ export default function HomePage() {
                             <img width={25} src={coin} alt='coin'></img><span>Eligible for up to 75 Gold Points</span>
                         </div>
                         <button>
-                            <img src={download} alt='download-img'></img>
-                            Direct Download
+                            <img className='download-img' src={download} alt='download-img'></img>
+                            <span>
+                                Direct Download
+                            </span>
                         </button>
                         <span>This item will be sent to your system automatically after purchase.</span>
                     </div>
@@ -77,7 +78,7 @@ export default function HomePage() {
                     Now with Multiplayer! Invite 1-3 players to join you in the valley! Players can work together to build a thriving farm, share resources, and build relationships with townspeople or each other. As more hands are better than one, players have the option to scale profit margin on produce sold for a more challenging experience
                     </p>
 
-                    <button className='read-more-button' onClick={ReadMore}>
+                    <div className='read-more-button' onClick={ReadMore}>
                         <div className={Read ? 'visible' : 'invisible'}>
                             <img src={suma} alt='+'></img> 
                             <div className='read-more'> Read More </div>
@@ -86,7 +87,7 @@ export default function HomePage() {
                             <img src={resta} alt='-'></img> 
                             <div className='read-more'> Read Less </div>
                         </div>
-                    </button>
+                    </div>
 
                     <span> Software description provided by the publisher.</span>
 
@@ -133,7 +134,7 @@ export default function HomePage() {
                             </div>
                         </div>
                     </div>
-                    <div >
+                    <div className='charact-conteiner' >
                        <div className='characteristics'>
                             <img src={calender} alt='img'></img>
                             <div >
