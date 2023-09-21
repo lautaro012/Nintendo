@@ -1,7 +1,8 @@
 
 import NintendoLogo from '../../assets/images/Nintendo.png'
 import NintendoStoreLogo from '../../assets/SVG/nintendostorelogo.svg'
-import lupa from '../../assets/images/lupa.png'
+import Lupa from '../../assets/images/lupa.png'
+import test from '../../assets/SVG/redlupe.svg'
 
 export default function MainNavbar () {
 
@@ -14,13 +15,19 @@ export default function MainNavbar () {
                     </div>
   
                 </div>
-                <div>
+                <div className='SearchBar-conteiner'>
                     <form className='SearchBar'>
                         <span>
                             <div className='search-button'>
-                                <img src={lupa} alt='error'></img>
-                                <input id='search' placeholder='Search'></input>
-                                <label for='search'></label>
+                                
+                                <img className='search-lupa' src={test} alt='error'></img>
+                                {
+                                    /*     
+                                    <input id='search' placeholder='Search'></input>
+                                    <label for='search'></label>
+                                    */ 
+                                }
+                                <span>Search</span>
                             </div>
                         </span>
                         <div>
