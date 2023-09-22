@@ -2,7 +2,7 @@ import './Homepage.css'
 import stardew from '../assets/images/Stardew.png'
 import calender from '../assets/SVG/calendario.svg'
 import players from '../assets/SVG/players.svg'
-import controller from '../assets/SVG/controller.svg'
+import Controller from '../assets/SVG/controller.jsx'
 import building from '../assets/SVG/building.svg'
 import config from '../assets/SVG/config.svg'
 import console from '../assets/SVG/switch.svg'
@@ -166,7 +166,7 @@ export default function HomePage() {
                             </div>
                        </div>
                        <div className='characteristics'>
-                            <img src={controller} alt='img'></img>
+                            <Controller/>
                             <div>
                                 <h3>Genre</h3>
                                 <div className='chars-links'>

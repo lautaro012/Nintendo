@@ -1,9 +1,12 @@
 import { useState } from "react"
 import Switch from "../../assets/SVG/switch"
 import Speaker from "../../assets/SVG/speaker"
-import Controller from "../../assets/SVG/controller.svg"
+import Controller from "../../assets/SVG/controller.jsx"
 import Calender from "../../assets/SVG/calender"
 import Close from "../../assets/SVG/close"
+import Test from '../../assets/SVG/test.jsx'
+import News from '../../assets/SVG/news.jsx'
+import Star from '../../assets/SVG/Star.jsx'
 
 export default function SecondNavbar () {
 
@@ -14,12 +17,39 @@ export default function SecondNavbar () {
 
     return (
         <nav className="SecondNavbar">
-          <div>
-            <div>My Nintendo Store</div>
-            <div onClick={ShowDetails}>Games</div>
-            <div>Nintendo Switch</div>
-            <div>News & Events</div>
-            <div>Play Nintendo</div>
+          <div className="SecondNavBar-ButtonConteiner">
+            <div className="SecondNavBar-buttons">
+              <div>
+                <Test className='truck'/>
+                <span>
+                  My Nintendo Store
+                </span>
+                </div>
+              <div onClick={ShowDetails}>
+                <Controller/>
+                <span>
+                  Games
+                </span>
+                </div>
+              <div>
+                <Switch/>
+                <span>
+                  Nintendo Switch
+                </span>
+              </div>
+              <div>
+                <News/>
+                <span>
+                  News & Events
+                </span>
+              </div>
+              <div>
+                <Star></Star>
+                <span>
+                  Play Nintendo
+                </span>
+              </div>
+            </div>
           </div>
           
           <div className={Show ? 'Games-active' : 'Games-hidden'}>
@@ -60,7 +90,7 @@ export default function SecondNavbar () {
                   <div>
                     <div>
                       <div>
-                        <img src={Controller} alt=''></img>
+                        <Controller/>
                       </div>
                       <p> Shop Games </p>
                     </div>
