@@ -11,6 +11,7 @@ import world from '../assets/SVG/world.svg'
 import online from '../assets/SVG/online.svg'
 import PC from '../assets/SVG/pc.svg'
 import handheld from '../assets/SVG/handheld.svg'
+import Hearthbutton from '../assets/SVG/Hearthbutton.jsx'
 import suma from '../assets/SVG/+.svg'
 import tabletop from '../assets/SVG/tabletop.svg'
 import download from '../assets/SVG/download.svg'
@@ -33,7 +34,7 @@ export default function HomePage() {
                 <div className='nav-card'>{'Store > Games > Stardew Valley'}</div>
                 <div className='Card'>
                     <div>
-                        <div>
+                        <div className='image-conteiner'>
                             <img width={'100%'} src={stardew} alt='error'></img>
                         </div>
                         <div className='clasification'>
@@ -50,8 +51,8 @@ export default function HomePage() {
                             <div>
                                 <h3>$ 14.99 </h3>
                             </div>
-                            <div>
-                                <button> {'<3'} </button>
+                            <div className='iVkbLZ'>
+                                <Hearthbutton/>
                             </div>
                         </div>
                         <div>

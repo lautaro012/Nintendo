@@ -283,6 +283,7 @@
 }
 
 .Announce2 section {
+    display: flex;
     -webkit-box-pack: center;
     justify-content: center;
     width: 100%;
@@ -290,13 +291,24 @@
 }
 .Announce2 section>div {
     -webkit-box-align: center;
+    display: flex;
     align-items: center;
     width: 96%;
     max-width: 71.5rem;
     height: 64px;
     padding-top: 0px;
+    justify-content: space-between;
 }
 
+.Announce2 section>div button {
+    width: 15.625rem;
+    height: 2.5rem;
+    padding: 0px 1rem;
+
+}
+.announce2-span{
+    font-size: small;
+}
 @media(max-width:440px) {
     .Announce2 {
         display: none;
@@ -306,10 +318,10 @@
 .download-button {
     display: flex;
     justify-content: space-around;
+    gap: 1rem;
+    align-items: center;
 }
-.download-button button {
-    
-}
+
 
 /* Absolute Nav Bar */
 .AbsoluteNavBar-conteiner {

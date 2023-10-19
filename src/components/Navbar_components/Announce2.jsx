@@ -7,12 +7,12 @@ export default function Announce2 () {
             <section>
                 <div>
                     <div>
-                        <span>Stardew Valley</span>
+                        <span><b>Stardew Valley</b></span>
                     </div>
 
                     <div className="download-button">
                             <img src={download} alt='download'></img>
-                            <div>Digital $14.99</div>
+                            <div><b><span className='announce2-span'>Digital</span>$14.99</b></div>
                             <button>Direct Download</button>
                     </div>
                 </div>
