@@ -71,32 +71,39 @@ export default function HomePage() {
             </div>
             <div>
                 <div className='description-conteiner'>
-                    <h2><b>You're moving to the valley...</b></h2>
-            
-                    <p>You’ve inherited your grandfather’s old farm plot in Stardew Valley. Armed with hand-me-down tools and a few coins, you set out to begin your new life. Can you learn to live off the land and turn these overgrown fields into a thriving home? It won’t be easy. Ever since Joja Corporation came to town, the old ways of life have all but disappeared. The community center, once the town’s most vibrant hub of activity, now lies in shambles. But the valley seems full of opportunity. With a little dedication, you might just be the one to restore Stardew Valley to greatness!
-                    </p>
-                    <p className={Read ? 'invisible' : 'visible'}>
-                    Now with Multiplayer! Invite 1-3 players to join you in the valley! Players can work together to build a thriving farm, share resources, and build relationships with townspeople or each other. As more hands are better than one, players have the option to scale profit margin on produce sold for a more challenging experience
-                    </p>
+                    <div>
+                        <h2><b>You're moving to the valley...</b></h2>
+                
+                        <p>You’ve inherited your grandfather’s old farm plot in Stardew Valley. Armed with hand-me-down tools and a few coins, you set out to begin your new life. Can you learn to live off the land and turn these overgrown fields into a thriving home? It won’t be easy. Ever since Joja Corporation came to town, the old ways of life have all but disappeared. The community center, once the town’s most vibrant hub of activity, now lies in shambles. But the valley seems full of opportunity. With a little dedication, you might just be the one to restore Stardew Valley to greatness!
+                        </p>
+                        <p className={Read ? 'invisible' : 'visible'}>
+                        Now with Multiplayer! Invite 1-3 players to join you in the valley! Players can work together to build a thriving farm, share resources, and build relationships with townspeople or each other. As more hands are better than one, players have the option to scale profit margin on produce sold for a more challenging experience
+                        </p>
 
-                    <div className='read-more-button' onClick={ReadMore}>
-                        <div className={Read ? 'visible' : 'invisible'}>
-                            <img src={suma} alt='+'></img> 
-                            <div className='read-more'> Read More </div>
+                        <div className='read-more-button' onClick={ReadMore}>
+                            <div className={Read ? 'visible' : 'invisible'}>
+                                <img src={suma} alt='+'></img> 
+                                <div className='read-more'> Read More </div>
+                            </div>
+                            <div className={Read ? 'invisible' : 'visible'}>
+                                <img src={resta} alt='-'></img> 
+                                <div className='read-more'> Read Less </div>
+                            </div>
                         </div>
-                        <div className={Read ? 'invisible' : 'visible'}>
-                            <img src={resta} alt='-'></img> 
-                            <div className='read-more'> Read Less </div>
-                        </div>
+
+                        <span> Software description provided by the publisher.</span>
+
+                        <button className='explore-button'>
+                            Explore this game's official website
+                        </button>
                     </div>
-
-                    <span> Software description provided by the publisher.</span>
-
-                    <button className='explore-button'>
-                        Explore this game's official website
-                    </button>
-                    <img width={'100%'} src={stardew} alt='error'></img>
+                    <div>
+                        <img width={'100%'} src={stardew} alt='error'></img>
+                    </div>
                 </div>
+                
+                <div className='clasification-SPM'>
+
                 <div className='clasification-mobile'>
                     <h2>ESRB Rating</h2>
                     <a href='asd'>
@@ -135,6 +142,8 @@ export default function HomePage() {
                             </div>
                         </div>
                     </div>
+                </div>
+
                     <div className='charact-conteiner' >
                        <div className='characteristics'>
                             <img src={calender} alt='img'></img>
