@@ -128,6 +128,9 @@ export default function Footer() {
                             </li>
                         </ul>
                     </div>
+                    <div className='footer-bottom-segment'>
+     
+                    </div>
                 </div>
 
                 {<img width={'64px'} className='ESRB-image' src={ESRB} alt='ESRB'></img>}

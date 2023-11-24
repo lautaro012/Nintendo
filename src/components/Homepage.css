@@ -3,6 +3,29 @@
     padding: 1rem;
     background-color: #d6f0fa;
 }
+.chars-links a{
+    background: transparent;
+    margin: 0px;
+    border: 0px;
+    line-height: 1.4;
+    border-radius: var(--border-radius);
+    display: inline-block;
+    color: rgb(230, 0, 18);
+    box-shadow: rgba(172, 0, 13, 0) 0px 0px 0px 4px;
+    transition: box-shadow 200ms ease-in-out 25ms;
+    text-decoration: none;
+}
+
+.chars-links a>span{
+    font-size: 0.875rem;
+    font-weight: 700;
+    cursor: pointer;
+    padding-bottom: 0px;
+    position: relative;
+    border-bottom: 2px solid rgb(230, 0, 18);
+    margin: 0px;
+    transition: border-bottom-color 200ms ease-in-out 25ms, color 200ms ease-in-out 25ms;
+}
 
 @media(min-width:750px) {
     .Card{
@@ -11,6 +34,84 @@
         max-width: 1280px;
         gap: 3rem;
     }
+}
+.playmodes {
+    background: rgb(72, 72, 72);
+    color: rgb(255, 255, 255);
+    padding: 1rem;
+    display: grid;
+    -webkit-box-pack: center;
+    justify-content: center;
+    box-shadow: rgba(60, 64, 89, 0.15) 0px 4px 16px 0px;
+    border-radius: 4px;
+}
+
+.playmodes-conteiner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    gap: 24px;
+}
+
+.playmodes-conteiner div > h2 {
+    font-weight: 700;
+    font-size: 0.875rem;
+}
+
+.charact-conteiner{
+    
+    position: relative;
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    scroll-margin-top: 120px;
+}
+
+.characteristics {
+    display: flex;
+    gap: 2rem;
+    justify-content: flex-start;
+    padding: 1rem 0.5rem;
+    align-items: center;
+}
+.characteristics div {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+}
+
+.characteristics h3 {
+    margin: 0;
+}
+.online-controller {display: none;}
+
+
+.clasification-mobile {
+    display: flex;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    background-color: rgb(248, 248, 248);
+    padding: 1.5rem 2rem;
+    border-radius: 1rem;
+}
+.clasification-mobile h2 {
+    font-weight: 700;
+    margin-block: 0px;
+    font-size: 0.875rem;
+}
+
+.clasification-mobile a {
+    padding: 1rem 2rem;
+    background: rgb(255, 255, 255);
+    box-shadow: rgba(60, 64, 89, 0.15) 0px 4px 16px 0px;
+    text-align: left;
+    text-decoration: none;
+    margin-bottom: 2rem;
 }
 
 .Card-conteiner {
@@ -110,17 +211,33 @@
 }
 .description-conteiner div {width: 100%;
 }
-
 .clasification-SPM{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
 }
+
 
 .clasification-mobile{width:50%}
 
-.SPM{width:50%}
+.SPM{
+    display: flex;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    background-color: rgb(248, 248, 248);
+    padding: 1.5rem 0rem;
+    grid-column: inherit;
+    width:auto}
 
-
+.characteristics div {
+    display: flex;
+    flex-direction: column;
+}
 
 @media(min-width:750px) {
     .Homepage {
@@ -179,33 +296,12 @@
         display: flex
     }
     
-    .clasification-mobile {
+    .clasification-SPM{
         display: flex;
-        -webkit-box-pack: start;
-        justify-content: flex-start;
-        -webkit-box-align: center;
-        align-items: center;
-        flex-direction: column;
-        text-align: center;
-        gap: 1rem;
-        background-color: rgb(248, 248, 248);
-        padding: 1.5rem 2rem;
-        border-radius: 1rem;
+        flex-direction: row;
+        
     }
-    .clasification-mobile h2 {
-        font-weight: 700;
-        margin-block: 0px;
-        font-size: 0.875rem;
-    }
-    
-    .clasification-mobile a {
-        padding: 1rem 2rem;
-        background: rgb(255, 255, 255);
-        box-shadow: rgba(60, 64, 89, 0.15) 0px 4px 16px 0px;
-        text-align: left;
-        text-decoration: none;
-        margin-bottom: 2rem;
-    }
+
     .ESRB-style{
         -webkit-box-align: center;
         align-items: center;
@@ -312,6 +408,7 @@
         flex-direction: column;
         text-align: center;
         gap: 1rem;
+        width: 50%;
         background-color: rgb(248, 248, 248);
         padding: 1.5rem 0rem;
         grid-column: inherit;
@@ -328,16 +425,7 @@
         font-size: 0.875rem;
     }
     
-    .playmodes {
-        background: rgb(72, 72, 72);
-        color: rgb(255, 255, 255);
-        padding: 1rem;
-        display: grid;
-        -webkit-box-pack: center;
-        justify-content: center;
-        box-shadow: rgba(60, 64, 89, 0.15) 0px 4px 16px 0px;
-        border-radius: 4px;
-    }
+  
     
     /* caracteristicas */
     .charact-conteiner{
@@ -358,7 +446,8 @@
     }
     .characteristics div {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        gap: 0rem
     }
     
     .characteristics h3 {
@@ -398,6 +487,11 @@
     }
     
     /* Online section */
+
+    .online-controller {    
+        display: flex;
+        flex-direction: row;}
+
     .online {
         display: flex;
         padding: 2rem;

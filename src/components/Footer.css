@@ -12,6 +12,9 @@
     width: 1px;
 }
 
+.footer-top div {display: flex;
+gap: 1rem;}
+
 .footer-bottom {
     display: flex;
 }
@@ -23,6 +26,10 @@
     -webkit-box-pack: center;
     justify-content: center;
 }
+
+.property {display: flex;}
+
+
 @media (max-width:1000px) {
 
     .footer-nintendo-logo {
@@ -99,7 +106,7 @@
 .property {
     background-color: rgb(36, 36, 36);
     padding: 2rem 1rem 114px;
-    display: grid;
+    display: flex;
     color: rgb(255, 255, 255);
     text-align: center;
     gap: 2rem;

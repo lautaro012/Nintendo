@@ -227,15 +227,18 @@ export default function HomePage() {
                                 <div> English, French, German, Italian, Japanese, Korean, Portuguese, Russian, Simplified Chinese, Spanish, Traditional Chinese </div>
                                 <div> Supported languages </div>
                             </div>
-                       </div>
+                       </div> 
                     </div>
-                    <div className='online'>
-                        <img src={online} width={'200px'} alt='online-err'></img>
-                        <div>
-                            <p className='online-text'><b>Play online, access classic NES™ and Super NES™ games, and more with a Nintendo Switch Online membership. </b></p>
-                            <p>This game supports: {<a href='https://robleslautaro.dev'><span>Online Play</span></a>}  {<a href='https://robleslautaro.dev'><span>Save Data Cloud</span></a>}</p>
-                            <button className='learn-more'> Learn More </button>
-                        </div>    
+                    <div className='online-conteiner'>
+                        <div className='online'>
+                            <img src={online} width={'200px'} alt='online-err'></img>
+                            <div>
+                                <p className='online-text'><b>Play online, access classic NES™ and Super NES™ games, and more with a Nintendo Switch Online membership. </b></p>
+                                <p>This game supports: {<a href='https://robleslautaro.dev'><span>Online Play</span></a>}  {<a href='https://robleslautaro.dev'><span>Save Data Cloud</span></a>}</p>
+                                <button className='learn-more'> Learn More </button>
+                            </div>    
+                        </div>
+                            <img className='online-controller' src='https://assets.nintendo.com/image/upload/f_auto,q_auto/v1605147657/ncom/en_US/merchandising/curated list/Games for core gamers/Pro-Controller-Hands.png' alt='controller'></img>
                     </div>
                     <div className='MoreLikethis'>
                         <div>
